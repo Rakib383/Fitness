@@ -47,11 +47,14 @@ nav .brand {
 }
 nav .nav-links {
   display: flex;
-  padding: 14px 6px;
+  padding: 14px 8px;
   align-items: center;
   gap: 42px;
   border-radius: 32px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav .nav-links i {
+  display:none;
 }
 nav .nav-links li a {
   font-size: 16px;
@@ -66,6 +69,7 @@ nav .nav-links li a:hover {
 .banner {
   display: flex;
   padding: 45px 90px;
+  padding-top:10px;
   justify-content: space-between;
   gap: 70px;
   max-width: 1440px;
@@ -76,7 +80,7 @@ nav .nav-links li a:hover {
 .banner .text-content h1 {
   font-size: 62px;
   font-weight: 900;
-  line-height: 76px;
+  line-height: 96px;
   color: white;
 }
 .banner .text-content h1 #special {
@@ -103,6 +107,7 @@ nav .nav-links li a:hover {
   border-radius: 42px;
   color: white;
   background-color: black;
+  cursor: pointer;
 }
 .banner .text-content .buttons button:hover {
   background-color: var(--orange);
@@ -159,31 +164,32 @@ nav .nav-links li a:hover {
   background-color: var(--orange);
 }
 
-/* habits */
+/* habits-section*/
+
 .habits {
   background-color: black;
 }
 
 .habits .container {
-  max-width: 1440px;
+  max-width: 1044px;
   margin: 0 auto;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0 20px;
 }
 .habits .container h2 {
   color: white;
   margin-top: 50px;
-  color: #fff;
   font-size: 38px;
   font-weight: 900;
 }
 .habits .container > p {
   color: var(--text);
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.5px;
   margin-bottom: 40px;
@@ -192,7 +198,7 @@ nav .nav-links li a:hover {
 .habits .container .pictures {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 20px;
 }
 .habits .container .pictures .picture {
   display: flex;
@@ -204,6 +210,7 @@ nav .nav-links li a:hover {
 }
 .habits .container .pictures .picture img {
   border-radius: 50%;
+  max-width: 160px;
 }
 .habits .container .pictures .picture h4 {
   color: white;
@@ -212,6 +219,64 @@ nav .nav-links li a:hover {
 }
 .habits .container .pictures .picture p {
   text-align: center;
-  line-height: 25px;
   color: var(--text);
+  line-height: 24px;
 }
+
+/* run-section */
+
+.run {
+  background-color: black;
+  padding: 70px 20px;
+}
+.run .run-container {
+  max-width: 992px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  background: #222;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.run .run-container .texts {
+  padding: 30px;
+}
+.run .run-container .texts h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 45px;
+  margin-bottom: 10px;
+}
+.run .run-container .texts p {
+  color: var(--text);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+.run .run-container .texts button {
+  width: 144px;
+  padding: 14px 10px;
+  border-radius: 34px;
+  margin-top: 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.run .run-container .texts button:hover {
+  background-color: var(--orange);
+  color: white;
+}
+.run .run-container .image {
+  padding: 30px;
+  padding-bottom: 0px;
+  max-width: 446px;
+}
+.run .run-container .image img {
+  width: 100%;
+  border-radius: 18px;
+}
+
+
